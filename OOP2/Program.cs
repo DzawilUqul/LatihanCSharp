@@ -83,6 +83,16 @@ namespace OOP2
         }
     }
 
+    class myEnum
+    {
+        public enum Level
+            {
+                Easy,
+                Medium,
+                Hard
+            }
+    }
+
 
     internal class Program
     {
@@ -113,6 +123,26 @@ namespace OOP2
             ChildInterface myInterface1 = new ChildInterface();
             myInterface1.myMethod1();
             myInterface1.myMethod2();
+
+            myEnum.Level myLevel = myEnum.Level.Medium;
+            switch (myLevel)
+            {
+                case myEnum.Level.Easy:
+                    Console.WriteLine("Easy");
+                    break;
+
+                case myEnum.Level.Medium:
+                    Console.WriteLine("Medium");
+                    break;
+                    
+                case myEnum.Level.Hard:
+                    Console.WriteLine("Hard");
+                    break;
+                default:
+                    Console.WriteLine("Undefined");
+                    break;
+            }
+            
         }
     }
 }
