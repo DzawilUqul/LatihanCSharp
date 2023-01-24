@@ -35,6 +35,12 @@ namespace OOP2
         }
     }
 
+    class SimpleProperty
+    {
+        public int Price
+        {get; set;}
+    }
+
 
     internal class Program
     {
@@ -49,6 +55,10 @@ namespace OOP2
             AddProperty Car2 = new AddProperty();
             Car2.Speed = 600;
             Console.WriteLine("Max Speed : " + Car2.Speed);
+
+            SimpleProperty Car3 = new SimpleProperty();
+            Car3.Price = 700;
+            Console.WriteLine("Price : " + Car3.Price);
         }
     }
 }
