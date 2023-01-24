@@ -16,6 +16,25 @@ namespace OOP2
         }
     }
 
+    class AddInheritance
+    {
+        public string animal = "Animal : ";
+        public virtual void animalSound()
+        {
+            Console.Write("Animal Sound : ");
+        }
+    }
+
+    class Cat : AddInheritance
+    {
+        public string type = "cat";
+        public int age = 8;
+        public override void animalSound()
+        {
+            Console.WriteLine("Meow");
+        }
+    }
+
 
     internal class Program
     {
@@ -25,6 +44,13 @@ namespace OOP2
             Console.WriteLine("Hello, World!");
             AddConstructor Car1 = new AddConstructor("Ferrari",100,2000);
             Console.WriteLine(Car1.brand + ", " + Car1.speed + ", " + Car1.year );
+
+            // Inheritance
+            Cat cat1 = new Cat();
+            AddInheritance animal1 = new AddInheritance();
+            Console.WriteLine(cat1.animal + cat1.type);
+            animal1.animalSound();
+            cat1.animalSound();
         }
     }
 }
