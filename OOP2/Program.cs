@@ -39,6 +39,8 @@ namespace OOP2
     {
         public int Price
         {get; set;}
+    }
+
     class AddInheritance
     {
         public string animal = "Animal : ";
@@ -55,6 +57,29 @@ namespace OOP2
         public override void animalSound()
         {
             Console.WriteLine("Meow");
+        }
+    }
+
+    interface AddInterface1
+    {
+        void myMethod1();
+    }
+
+    interface AddInterface2
+    {
+        void myMethod2();
+    }
+
+    class ChildInterface : AddInterface1,AddInterface2
+    {
+        public void myMethod1()
+        {
+            Console.WriteLine("Interface Method 1");
+        }
+
+        public void myMethod2()
+        {
+            Console.WriteLine("Interface Method 2");
         }
     }
 
@@ -76,12 +101,18 @@ namespace OOP2
             SimpleProperty Car3 = new SimpleProperty();
             Car3.Price = 700;
             Console.WriteLine("Price : " + Car3.Price);
+
             // Inheritance
             Cat cat1 = new Cat();
             AddInheritance animal1 = new AddInheritance();
             Console.WriteLine(cat1.animal + cat1.type);
             animal1.animalSound();
             cat1.animalSound();
+
+            // Interface
+            ChildInterface myInterface1 = new ChildInterface();
+            myInterface1.myMethod1();
+            myInterface1.myMethod2();
         }
     }
 }
