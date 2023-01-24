@@ -39,6 +39,23 @@ namespace OOP2
     {
         public int Price
         {get; set;}
+    class AddInheritance
+    {
+        public string animal = "Animal : ";
+        public virtual void animalSound()
+        {
+            Console.Write("Animal Sound : ");
+        }
+    }
+
+    class Cat : AddInheritance
+    {
+        public string type = "cat";
+        public int age = 8;
+        public override void animalSound()
+        {
+            Console.WriteLine("Meow");
+        }
     }
 
 
@@ -59,6 +76,12 @@ namespace OOP2
             SimpleProperty Car3 = new SimpleProperty();
             Car3.Price = 700;
             Console.WriteLine("Price : " + Car3.Price);
+            // Inheritance
+            Cat cat1 = new Cat();
+            AddInheritance animal1 = new AddInheritance();
+            Console.WriteLine(cat1.animal + cat1.type);
+            animal1.animalSound();
+            cat1.animalSound();
         }
     }
 }
