@@ -142,6 +142,8 @@ namespace OOP2
                     Console.WriteLine("Undefined");
                     break;
             }
+
+            int s = 0;
             
         }
     }
