@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\EternityBee\\coding\\LatihanCSharp\\OOP\\OOP.csproj": {}
+    "D:\\EternityBee\\Coding\\LatihanCSharp\\OOP\\OOP.csproj": {}
   },
   "projects": {
-    "D:\\EternityBee\\coding\\LatihanCSharp\\OOP\\OOP.csproj": {
+    "D:\\EternityBee\\Coding\\LatihanCSharp\\OOP\\OOP.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\EternityBee\\coding\\LatihanCSharp\\OOP\\OOP.csproj",
+        "projectUniqueName": "D:\\EternityBee\\Coding\\LatihanCSharp\\OOP\\OOP.csproj",
         "projectName": "OOP",
-        "projectPath": "D:\\EternityBee\\coding\\LatihanCSharp\\OOP\\OOP.csproj",
+        "projectPath": "D:\\EternityBee\\Coding\\LatihanCSharp\\OOP\\OOP.csproj",
         "packagesPath": "C:\\Users\\asus\\.nuget\\packages\\",
-        "outputPath": "D:\\EternityBee\\coding\\LatihanCSharp\\OOP\\obj\\",
+        "outputPath": "D:\\EternityBee\\Coding\\LatihanCSharp\\OOP\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\asus\\AppData\\Roaming\\NuGet\\NuGet.Config"
