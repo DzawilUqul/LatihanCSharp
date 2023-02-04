@@ -143,7 +143,7 @@ namespace BasicCSharp // Note: actual namespace depends on the project name.
             double nilai = 84.9;
             Console.WriteLine(Math.Round(nilai));
 
-            Console.WriteLine("cek");
+            Console.WriteLine("cek1");
 
         }
     }
