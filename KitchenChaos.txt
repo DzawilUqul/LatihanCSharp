@@ -22,4 +22,3 @@ Events
 Delegates
 Difference between Transform and Game Object
 Scriptable Objects (crafting  system, hydroneer)
-cek1
